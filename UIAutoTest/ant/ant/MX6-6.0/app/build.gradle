@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        applicationId "com.example.nhy.mx6_60"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    //testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile files('E:/MX6-6.0/libs/espresso-contrib-2.2-release-no-dep.jar')
+    //compile files('E:/MX6-6.0/libs/espresso-core-2.2-release-no-dep.jar')
+    compile files('E:/MX6-6.0/libs/espresso-idling-resource-2.2-release-no-dep.jar')
+    compile files('E:/MX6-6.0/libs/espresso-intents-2.2-release-no-dep.jar')
+    compile files('E:/MX6-6.0/libs/espresso-web-2.2-release-no-dep.jar')
+    compile files('E:/MX6-6.0/libs/exposed-instrumentation-api-publish-0.3-release-no-dep.jar')
+    //compile files('E:/MX6-6.0/libs/guava-18.0.jar')
+    compile files('E:/MX6-6.0/libs/hamcrest-core-1.3.jar')
+    compile files('E:/MX6-6.0/libs/hamcrest-integration-1.3.jar')
+    compile files('E:/MX6-6.0/libs/hamcrest-library-1.3.jar')
+    compile files('E:/MX6-6.0/libs/javawriter-2.1.1.jar')
+    compile files('E:/MX6-6.0/libs/javax.annotation-api-1.2.jar')
+    compile files('E:/MX6-6.0/libs/javax.inject-1.jar')
+    compile files('E:/MX6-6.0/libs/jsr305-2.0.1.jar')
+    compile files('E:/MX6-6.0/libs/junit-4.12.jar')
+    compile files('E:/MX6-6.0/libs/rules-0.3-release-no-dep.jar')
+    compile files('E:/MX6-6.0/libs/runner-0.3-release-no-dep.jar')
+    compile files('E:/MX6-6.0/libs/uiautomator-v18-2.1.1-release-no-dep.jar')
+}
